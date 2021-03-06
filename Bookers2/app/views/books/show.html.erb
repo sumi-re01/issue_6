@@ -25,7 +25,11 @@
             </td>
             <td><%= @book.body %></td>
             <td>
-             <%= render 'favorite', book: @book %>
+              <!--いいねボタンを非同期通信で行う-->
+              <div id="favorite_button_<%= book.id %>">
+                <%= render partial: 'favorites/favorite', locals: {book: @book} %>
+              </div>
+              <!--ここまで-->
             </td>
             <td>
               コメント数：<%= @book.book_comments.count %>
