@@ -12,7 +12,7 @@
 //
 
 // bootstrap
-
+// 順番入れ替えたらできた！！なんで？？
 //= require rails-ujs
 //= require jquery
 //= require popper
