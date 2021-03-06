@@ -37,7 +37,7 @@
             <td><%= book.body %></td>
             <td>
               <!--いいねボタンを非同期通信で行う-->
-              <div id="favorite_button_<%= book.id %>">
+              <div id="favorite_<%= book.id %>">
                 <%= render partial: 'favorites/favorite', locals: {book: book} %>
               </div>
               <!--ここまで-->
