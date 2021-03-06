@@ -12,11 +12,12 @@
 //
 
 // bootstrap
+// 順番入れ替えたらできた！！なんで？？
+//= require rails-ujs
 //= require jquery
 //= require popper
 //= require bootstrap-sprockets
 
-//= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
