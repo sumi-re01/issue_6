@@ -26,7 +26,7 @@
             <td><%= @book.body %></td>
             <td>
               <!--いいねボタンを非同期通信で行う-->
-              <div id="favorite_<%= book.id %>">
+              <div id="favorite_<%= @book.id %>">
                 <%= render partial: 'favorites/favorite', locals: {book: @book} %>
               </div>
               <!--ここまで-->
@@ -42,7 +42,9 @@
           </tr>
         </tbody>
       </table>
-      <%= render 'comment', book: @book, book_comment: @book_comment %>
+      <div id="comments">
+        <%= render 'book_comments/comments', book: @book, book_comment: @book_comment %>
+      </div>
     </div>
   </div>
 </div>
