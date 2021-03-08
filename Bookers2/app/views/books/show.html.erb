@@ -44,11 +44,11 @@
       </table>
       <!--更新したい画面（コメント一覧）-->
       <div id="comment_list">
-        <%= render 'book_comments/index', book: @book %>
+        <%= render partial: 'book_comments/index', locals: { book: @book } %>
       </div>
       <!--↑↑-->
       <div id="comment_form">
-        <%= render 'book_comments/form', book_comment: @book_comment, book: @book %>
+        <%= render partial: 'book_comments/form', locals: { book_comment: @book_comment, book: @book } %>
       </div>
     </div>
   </div>
