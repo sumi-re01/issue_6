@@ -1,0 +1,9 @@
+<div class="row">
+  <!--@bookで/books/:book_id/book_commentsの:book_idを取得するのさ〜〜！！-->
+  <%= form_with model: [book, book_comment], url: book_book_comments_path(@book), remote:true do |f| %>
+  <div class="comment_form">
+    <%= f.text_area :comment, class:"form-control", size:"90x3" %>
+    <%= f.submit "送信" %>
+  </div>
+  <% end %>
+</div>
